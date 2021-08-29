@@ -371,3 +371,6 @@ def ask(nvim: Nvim, question: str, default: str) -> Optional[str]:
         return None
     else:
         return resp
+
+def getreg(nvim: Nvim, regname: str) -> Optional[str]:
+    return nvim.funcs.getreg(regname)
